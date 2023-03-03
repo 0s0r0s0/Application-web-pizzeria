@@ -1,0 +1,16 @@
+﻿@page
+@model pizza_mama.Pages.Admin.IndexModel
+@{
+}
+<h1>Authentification</h1> <br />
+
+@if (Model.DisplayInvalidAccountMessage)
+{
+    <div class="alert alert-info">Erreur: Identifiant et/ou mot de passe invalides</div><br />
+}
+
+<form method="post">
+<input type="text" name="username" placeholder="Login"> <br /> <br />
+<input type="password" name="password" placeholder="Mot de passe"> <br /> <br />
+<button>Se connecter</button>
+</form>
